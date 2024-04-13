@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    letter-spacing: .8px;
+    font-family: "Ubuntu", sans-serif;
+}
+
+*:focus{
+    outline: 0;
+}
+
+:root{
+    --bg: #333;
+    --text: #ffe;
+    --theme: #49a;
+}
+
+html{
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: "Ubuntu", sans-serif;
+    user-select: none;
+}
+
+button{
+    border: 0;
+    padding: .5rem;
+    background-color: var(--theme);
+    cursor: pointer;
+    color: var(--text);
+    font-size: 1rem;
+    border-radius: .5rem;
+}
+
+button:hover{
+    background-color: var(--text);
+    color: var(--theme);
+}
+
+header{
+    padding: .5rem;
+}
+
+main{
+    padding: 1rem;
+}
+
+#about{
+    padding: 1rem;
+    text-align: center;
+}
+
+#about h2{
+    font-size: 5rem;
+    background: linear-gradient(var(--theme), #a49);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    margin-bottom: 3rem;
+}
+
+form{
+    padding: .5rem;
+}
+
+.field{
+    padding: .5rem;
+    margin: .5rem;
+    display: flex;
+    justify-content: center;
+}
+
+input{
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid var(--text);
+    padding: .5rem;
+    font-size: 1.5rem;
+    width: 55%;
+    color: var(--text);
+    text-align: center;
+    user-select: none;
+}
+
+#gen-btn{
+    width: 20rem;
+    padding: 1rem;
+}
+
+#toggle-pwd{
+    display: block;
+    background-color: tr;
+    width: 3rem;
+    height: 3rem;
+    border-radius: .5rem;
+}
+
+.buttons{
+    justify-content: space-around;
+}
+
+#copy{
+    width: 12rem;
+}
+
+#toast{
+    background-color: var(--text);
+    color: var(--bg);
+    padding: .5rem;
+    position: fixed;
+    right: -100px;
+    bottom: 10px;
+    font-weight: bolder;
+    transition: .5s;
+}
+
+button:disabled{
+    background-color: #7777;
+}

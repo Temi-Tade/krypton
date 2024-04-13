@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+    <title>Krypton | Generate secure password and keys</title>
+</head>
+<body>
+    <header>
+        <h1>Krypton</h1>
+    </header>
+    <main>
+        <div id="about">
+            <h2>Krypton</h2>
+            Thank you for choosing Krypton, a tool for generating secure passwords, passkeys and user IDs.
+        </div>
+
+        <form>
+            <div class="field">
+                <input type="password" name="pass" id="pass" readonly placeholder="Generated Password will appear here..." oncopy="event.preventDefault();" oncontextmenu="event.preventDefault()">
+                <button id="toggle-pwd" type="button" class="fa-solid fa-eye" onclick="TOGGLE_PWD(this, key_field)" title="Toggle Password View"></button>
+            </div>
+
+            <div class="field buttons">
+                <button type="button" id="copy" onclick="COPY_KEY(key_field)" disabled>Copy</button>
+                <button id="gen-btn" onclick="GENERATE_KEY(event)">Generate</button>
+            </div>
+        </form>
+
+        <div id="toast">Toast</div>
+    </main>
+
+    <script src="./assets/js/index.js"></script>
+</body>
+</html>
